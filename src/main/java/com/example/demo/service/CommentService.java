@@ -7,12 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import com.example.ServiceInterface.CommentService;
 import com.example.demo.dao.CommentDao;
 import com.example.demo.entity.Comment;
 import com.example.demo.entity.ResponseStructure;
 
 @Service
-public class CommentService {
+public class CommentService implements CommentService{
 	@Autowired
 	private CommentDao dao;
 
