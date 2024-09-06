@@ -9,11 +9,11 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.User;
 import com.example.demo.exceptions.EntityAlreadyExistsException;
 import com.example.demo.repositries.UserRepositry;
-
+import com.example.demo.daoInterface.UserDao;
 import jakarta.persistence.EntityNotFoundException;
 
 @Repository
-public class UserDao {
+public class UserDao implements UserDao{
 	@Autowired
 	private UserRepositry repositry;
 
