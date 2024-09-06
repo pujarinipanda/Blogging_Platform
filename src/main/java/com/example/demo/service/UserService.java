@@ -6,13 +6,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
+import com.example.demo.ServiceInterface.UserService;
 import com.example.demo.dao.UserDao;
 import com.example.demo.entity.ResponseStructure;
 import com.example.demo.entity.User;
 
 @Service
-public class UserService {
+public class UserService implements UserService {
 	@Autowired
 	private UserDao dao;
 
