@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
+import com.example.demo.daoInterface.CommentDao;
 import com.example.demo.entity.Comment;
 import com.example.demo.entity.Post;
 import com.example.demo.entity.User;
@@ -14,7 +14,7 @@ import com.example.demo.repositries.CommentRepositry;
 import jakarta.persistence.EntityNotFoundException;
 
 @Repository
-public class CommentDao {
+public class CommentDao implements CommentDao{
 	@Autowired
 	private CommentRepositry repositry;
 	
